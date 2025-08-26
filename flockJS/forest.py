@@ -6,9 +6,11 @@ directions = ["north", "south", "east", "west", "up", "down", "northeast", "nort
 def createTree():
     types = ["oak", "pine", "birch", "maple", "willow", "redwood", "cedar", "spruce", "cherry", "apple"]
     sizes = ["sapling", "medium", "large", "giant", "towering"]
-    qualities = ["gnarled", "twin-trunked", "twisting", ]
+    qualities = ["gnarled", "twin-trunked", "twisting", "sparse", "late-budding"]
+    
     tree = {
         "name": 
+
     }
 
     return tree
