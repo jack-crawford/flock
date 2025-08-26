@@ -1,7 +1,7 @@
 /flockJS/node_modules
 .DS_Store
 flockJS/.DS_Store
-flockJS/README.md
 flockJS/.github/copilot-instructions.md
 flockJS/resources/.DS_Store
 flockJS/scrolls/*.md
+.vscode
