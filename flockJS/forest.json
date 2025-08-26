@@ -1,73 +1,70 @@
 [
-    {
-        "name": "the center stone",
-        "description": "the starting point",
-        "directions": [
-            "north",
-            "south",
-            "east",
-            "west"
-        ],
-        "north": {
-            "name": "a twin-trunked towering cherry tree",
-            "description": "it has deep roots",
-            "directions": [
-                "southeast",
-                "west",
-                "down",
-                "southwest",
-                "up",
-                "east",
-                "northwest",
-                "northeast",
-                "north"
-            ],
-            "sourceDirection": "south",
-            "scrolls": []
-        },
-        "south": {
-            "name": "a gnarled towering redwood tree",
-            "description": "it has deep roots",
-            "directions": [
-                "northwest",
-                "down",
-                "south"
-            ],
-            "sourceDirection": "north",
-            "scrolls": []
-        },
-        "east": {
-            "name": "a late-budding large apple tree",
-            "description": "it has wide, low branches as though climbable",
-            "directions": [
-                "up",
-                "east",
-                "southwest",
-                "south",
-                "north",
-                "northwest",
-                "down",
-                "southeast",
-                "northeast"
-            ],
-            "sourceDirection": "west",
-            "scrolls": []
-        },
-        "west": {
-            "name": "a twisting towering cherry tree",
-            "description": "it has wide, low branches as though climbable",
-            "directions": [
-                "southeast",
-                "down",
-                "west",
-                "north",
-                "northwest",
-                "south",
-                "northeast"
-            ],
-            "sourceDirection": "east",
-            "scrolls": []
-        },
-        "inscriptions": []
-    }
+  {
+    "name": "the center stone",
+    "description": "the starting point",
+    "directions": [
+      "north",
+      "south",
+      "east",
+      "west"
+    ],
+    "north": {
+      "type": "tree",
+      "name": "a gnarled sapling pine tree",
+      "description": "it has deep roots",
+      "directions": [
+        "down",
+        "northwest",
+        "northeast",
+        "southwest",
+        "east",
+        "southeast",
+        "north",
+        "west"
+      ],
+      "sourceDirection": "south",
+      "scrolls": []
+    },
+    "south": {
+      "type": "tree",
+      "name": "a twin-trunked sapling cedar tree",
+      "description": "it has wide, low branches as though climbable",
+      "directions": [
+        "up",
+        "underneath"
+      ],
+      "sourceDirection": "north",
+      "scrolls": []
+    },
+    "east": {
+      "type": "tree",
+      "name": "a late-budding middling cedar tree",
+      "description": "it has deep roots",
+      "directions": [
+        "northeast",
+        "up",
+        "in"
+      ],
+      "sourceDirection": "west",
+      "scrolls": []
+    },
+    "west": {
+      "type": "tree",
+      "name": "a twin-trunked middling apple tree",
+      "description": "it has bark wrapping in strange patterns",
+      "directions": [
+        "south",
+        "west",
+        "down",
+        "up",
+        "southeast",
+        "northeast",
+        "southwest",
+        "north"
+      ],
+      "sourceDirection": "east",
+      "scrolls": []
+    },
+    "inscriptions": []
+  }
 ]

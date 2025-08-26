@@ -36,6 +36,7 @@ def main():
     if(forestExists):
         with open('forest.json') as f:
             forest = json.load(f)
+            print(forest)
             inscriptions = forest[0]["inscriptions"]
             print(forest)
             print(f"inscription count: {len(inscriptions)}")

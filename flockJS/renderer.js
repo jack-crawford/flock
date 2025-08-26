@@ -1,15 +1,17 @@
 const { createApp } = Vue;
-function index(obj,is, value) {
+function index(obj, path, value) {
     //credit here to stack https://stackoverflow.com/questions/6393943/convert-a-javascript-string-in-dot-notation-into-an-object-reference
-    if (typeof is == 'string')
-        return index(obj,is.split('.'), value);
-    else if (is.length==1 && value!==undefined)
-        return obj[is[0]] = value;
-    else if (is.length==0)
+    if (typeof path == 'string')
+        return index(obj,path.split('.'), value);
+    else if (path.length==1 && value!==undefined){
+        console.log("setting value", obj[path[0]], value)
+        return obj[path[0]] = value;
+    }else if (path.length==0)
         return obj;
     else
-        return index(obj[is[0]],is.slice(1), value);
+        return index(obj[path[0]],path.slice(1), value);
 }
+
 createApp({
   data() {
     return {
@@ -19,18 +21,40 @@ createApp({
       path: "",
       prettyPath: "",
       activeNode: {},
+      activeScroll: {
+        lastUpdated:null,
+        path: ""
+      },
+      activeScrollContent: ""
     };
   },
+  watch: {
+    activeScrollContent: function(newContent) {
+        console.log(newContent)
+        this.activeScrollContent = newContent;
+        this.activeScroll.lastUpdated = new Date().toISOString();
+        this.saveScroll();
+    }
+  },
   methods: {
-    navigate(direction) {
-        console.log("heading: " + direction.srcElement.value)
-        direction = direction.srcElement.value.toLowerCase().trim();
+    saveScroll(){
+        //also save the scroll properties to the forest
+        console.log("Trying to save")
+        window.electronAPI.sendScroll(this.activeScroll.path, this.activeScrollContent);
+    },
+    loadScroll(){
+        window.electronAPI.getScroll(this.activeScroll.path, (scroll) => {
+            this.activeScrollContent = scroll
+        })
+    },
+    move(direction) {
         if(this.path == "") {
             this.path = direction;
-            this.prettyPath += "/ " + this.activeNode.name
             this.activeNode = index(JSON.parse(JSON.stringify(this.forest)), this.path);
+            this.prettyPath += "/ " + this.activeNode.name
+
         } else {
-            if(this.activeNode.sourceDirection == direction) {
+            if(this.activeNode.sourceDirection == direction || direction == "back") {
                 console.log("going back");
                 console.log(this.path);
                 if(this.path.includes(".")){
@@ -45,31 +69,86 @@ createApp({
                 }
             } else {
                 //advance
-                this.prettyPath += "/ " + this.activeNode.name
                 console.log(this.prettyPath)
                 this.path = this.path + "." + direction;
                 this.activeNode = index(JSON.parse(JSON.stringify(this.forest)), this.path);
+                this.prettyPath += "/ " + this.activeNode.name
             }
             console.log(this.path);
         }
+        if(this.activeNode.scrolls != undefined && this.activeNode.scrolls.length > 0){
+            //load scroll at path
+            this.activeScroll.path = this.prettyPath.replace(/ /g, "_").toLowerCase() + ".txt";
+            this.loadScroll();
+        } else {
+            this.activeScroll = {
+                path: "",
+                lastUpdated:null,
+            }
+            this.activeScrollContent = "";
+        }
+    },
+    look(direction){
+        if (!this.activeNode.directions.includes(direction)) {
+            this.activeNode.directions.push(direction);
+
+            // Update the forest with the modified activeNode at the correct path
+            if (this.path) {
+                index(this.forest, this.path, this.activeNode);
+            } else {
+                this.forest = this.activeNode;
+            }
+
+            window.electronAPI.sendForest([JSON.parse(JSON.stringify(this.forest))]);
+        } else {
+            console.log("this direction already exists");
+        }
+    },
+    write(){
+        this.activeScroll.path = this.prettyPath.replace(/ /g, "_").toLowerCase() + ".md";
+        this.loadScroll();
+    },
+    navigate(directionEl) {
+        direction = directionEl.srcElement.value.toLowerCase().trim();
+        command = direction.split(" ")[0];
+        heading = direction.split(" ")[1];
+        console.log("command: " + command)
+        switch(command){
+            case "go":
+                console.log("heading: " + heading)
+                this.move(heading);
+                break;
+            case "look":
+                this.look(heading);
+                break;
+            case "write":
+                this.write();
+                break;
+            default:
+                console.log("unknown command: " + command)
+                break;
+        }
+        
+        document.getElementById("navigator").value = "";
 
     },
     onInput(e) {
-      // Only add bird when a space is typed
-    if (e.data && /\W/.test(e.data)) { // Checks for non-alphanumeric character
-      const words = this.scrollEntry.split(' ');
-      const lastWord = words[words.length - 2];
-      if (lastWord) {
-        this.flock.push({
-        value: lastWord,
-        entryDateTime: new Date().toISOString(),
-        id: this.flock.length + 1
-        });
-        var flocklist = document.getElementById("flockList");
-        flocklist.scrollTop = flocklist.scrollHeight + 25;
-      }
-    }
-      window.electronAPI.sendFlock(JSON.parse(JSON.stringify(this.flock)));
+        console.log(e);
+        // Only add bird when a space is typed
+        if (e.data && /\W/.test(e.data)) { // Checks for non-alphanumeric character
+            const words = this.activeScrollContent.split(' ');
+            const lastWord = words[words.length - 2];
+            if (lastWord) {
+                this.flock.push({
+                value: lastWord,
+                entryDateTime: new Date().toISOString(),
+                id: this.flock.length + 1
+                });
+                var flocklist = document.getElementById("flockList");
+                flocklist.scrollTop = flocklist.scrollHeight + 25;
+            }
+        }
+        window.electronAPI.sendFlock(JSON.parse(JSON.stringify(this.flock)));
     },
     getFlockFromMain() {
       window.electronAPI.getFlock((flock) => {

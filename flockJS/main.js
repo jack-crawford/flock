@@ -17,7 +17,7 @@ function createWindow() {
       const data = fs.readFileSync('flock.json', 'utf-8');
       try {
         const flock = JSON.parse(data);
-        console.log('Flock data loaded:', flock);
+        //console.log('Flock data loaded:', flock);
         win.webContents.send('getFlock', flock);
       } catch (err) {
         console.error('Error parsing flock.json:', err);
@@ -32,7 +32,7 @@ function createWindow() {
       const data = fs.readFileSync('forest.json', 'utf-8');
       try {
         const forest = JSON.parse(data);
-        console.log('Forest data loaded:', forest);
+        //console.log('Forest data loaded:', forest);
         win.webContents.send('getForest', forest);
       } catch (err) {
         console.error('Error parsing forest.json:', err);
@@ -63,6 +63,43 @@ ipcMain.on('ping', (event, arg) => {
 });
 
 ipcMain.on('flock-data', (event, flock) => {
-  console.log('Received flock from renderer:', flock);
+  //console.log('Received flock from renderer:', flock);
   fs.writeFileSync('flock.json', JSON.stringify(flock, null, 2), 'utf-8');
+});
+
+ipcMain.on('forest-data', (event, forest) => {
+  //console.log('Received forest from renderer:', forest);
+  console.log("trying to save");
+  //console.log(forest);
+  fs.writeFileSync('forest.json', JSON.stringify(forest, null, 2), 'utf-8');
+});
+ipcMain.on('getScroll', (event, filePath) => {
+    filePath = filePath.replace("/", "-");
+    console.log(filePath);
+    filePath = "scrolls/" + filePath;
+    console.log("getting scroll at path: " + filePath);
+    try {
+        if (fs.existsSync(filePath)) {
+        const data = fs.readFileSync(filePath, 'utf-8');
+        event.reply('getScroll', data);
+        } else {
+        fs.writeFileSync(filePath, '', 'utf-8');
+        event.reply('getScroll', '');
+        }
+    } catch (err) {
+        console.error('Error reading scroll file:', err);
+        event.reply('getScroll', '');
+    }
+});
+ipcMain.on('saveScroll', (event, payload) => {
+    console.log(payload)
+    const filePath = "scrolls/" + payload.path.replace("/", "-");
+    const content = payload.content || '';
+    try {
+        fs.writeFileSync(filePath, content, 'utf-8');
+        event.reply('getScroll', content);
+    } catch (err) {
+        console.error('Error saving scroll file:', err);
+        event.reply('getScroll', '');
+    }
 });
