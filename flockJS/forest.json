@@ -1,0 +1,73 @@
+[
+    {
+        "name": "the center stone",
+        "description": "the starting point",
+        "directions": [
+            "north",
+            "south",
+            "east",
+            "west"
+        ],
+        "north": {
+            "name": "a twin-trunked towering cherry tree",
+            "description": "it has deep roots",
+            "directions": [
+                "southeast",
+                "west",
+                "down",
+                "southwest",
+                "up",
+                "east",
+                "northwest",
+                "northeast",
+                "north"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+        },
+        "south": {
+            "name": "a gnarled towering redwood tree",
+            "description": "it has deep roots",
+            "directions": [
+                "northwest",
+                "down",
+                "south"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+        },
+        "east": {
+            "name": "a late-budding large apple tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+                "up",
+                "east",
+                "southwest",
+                "south",
+                "north",
+                "northwest",
+                "down",
+                "southeast",
+                "northeast"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+        },
+        "west": {
+            "name": "a twisting towering cherry tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+                "southeast",
+                "down",
+                "west",
+                "north",
+                "northwest",
+                "south",
+                "northeast"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+        },
+        "inscriptions": []
+    }
+]
