@@ -27,6 +27,22 @@ function createWindow() {
       win.webContents.send('getFlock', []);
       console.log('flock.json does not exist. Starting with an empty flock.');
     }
+
+    if (fs.existsSync('forest.json')) {
+      const data = fs.readFileSync('forest.json', 'utf-8');
+      try {
+        const forest = JSON.parse(data);
+        console.log('Forest data loaded:', forest);
+        win.webContents.send('getForest', forest);
+      } catch (err) {
+        console.error('Error parsing forest.json:', err);
+        win.webContents.send('getForest', []);
+      }
+    } else {
+        const spawn = require("child_process").spawn;
+        console.log('forest.json does not exist. trying to create one with forest.py');
+        const pythonProcess = spawn('python',["forest.py"]);
+    }
   });
 }
 

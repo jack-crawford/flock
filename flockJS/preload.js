@@ -11,4 +11,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
   getFlock: (callback) => {
         ipcRenderer.on('getFlock', (event, message) => callback(message));
   },
+  getForest: (callback) => {
+        ipcRenderer.on('getForest', (event, message) => callback(message));
+  }
 });
