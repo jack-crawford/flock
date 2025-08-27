@@ -74,7 +74,7 @@ ipcMain.on('forest-data', (event, forest) => {
   fs.writeFileSync('forest.json', JSON.stringify(forest, null, 2), 'utf-8');
 });
 ipcMain.on('getScroll', (event, filePath) => {
-    filePath = filePath.replace("/", "-");
+    filePath = filePath.replaceAll("/", "-");
     console.log(filePath);
     filePath = "scrolls/" + filePath;
     console.log("getting scroll at path: " + filePath);
@@ -83,7 +83,7 @@ ipcMain.on('getScroll', (event, filePath) => {
         const data = fs.readFileSync(filePath, 'utf-8');
         event.reply('getScroll', data);
         } else {
-        fs.writeFileSync(filePath, '', 'utf-8');
+        //fs.writeFileSync(filePath, '', 'utf-8');
         event.reply('getScroll', '');
         }
     } catch (err) {
@@ -93,10 +93,21 @@ ipcMain.on('getScroll', (event, filePath) => {
 });
 ipcMain.on('saveScroll', (event, payload) => {
     console.log(payload)
-    const filePath = "scrolls/" + payload.path.replaceAll("/", "-");
+    const scrollPath = payload.path;
+    const parts = scrollPath.split('/');
+    const fileName = parts.pop();
+    const dirPath = "scrolls/" + parts.join('/');
+    dirPath.replaceAll("//","/");
+    const filePath = dirPath + '/' + fileName;
+    //const filePath = "scrolls/" + payload.path//.replaceAll("/", "-");
     const content = payload.content || '';
     try {
-        fs.writeFileSync(filePath, content, 'utf-8');
+        if(!fs.existsSync(filePath)){
+            fs.mkdir(dirPath, { recursive: true }, (err) => {
+                if (err) throw err;
+            });
+        }
+        fs.writeFileSync(filePath , content, 'utf-8');
         event.reply('getScroll', content);
     } catch (err) {
         console.error('Error saving scroll file:', err);

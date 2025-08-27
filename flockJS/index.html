@@ -129,38 +129,38 @@
   </style>
 </head>
 <body>
-    <div id="app" class="container">
-        <div class="row border navigation" v-if="forest != []">
-            <h3>
-                {{ activeNode.name }}
-            </h3>
-            <h4>
-                {{ activeNode.description }}
-            </h4>
-            <div>
-                <p><i>{{prettyPath}}</i></p>
-                <!-- <input v-model="path"/> -->
+    <div id="app" class="container mx-1">
+        <div class="row border mx-0 px-0" style="align-items: stretch;">
+            <div class="col-3 border navigation" v-if="forest != []" style="max-height: 480px; overflow-y: auto; display: flex; flex-direction: column;">
+                <h3>
+                    {{ activeNode.name }}
+                </h3>
+                <h4>
+                    {{ activeNode.description }}
+                </h4>
+                <div>
+                    <p><i>{{prettyPath}}</i></p>
+                    <!-- <input v-model="path"/> -->
+                </div>
+                
+                <b>Options:</b>
+                <div v-for="direction in activeNode.directions" class="direction m-1 p-1">
+                    {{ direction }} -- {{ activeNode[direction] ? activeNode[direction].name : '' }}
+                </div>
+                <div v-if="activeNode.sourceDirection != null" class="direction m-1 p-1">
+                    back - {{ lastNodeName }}
+                </div>
+                <div v-if="activeNode.scrolls == undefined || activeNode.scrolls == []" class="direction m-1 p-1">
+                    write
+                </div>
+                <div>
+                    > <input type="text" id="navigator" placeholder="act here" @keyup.enter="navigate" />
+                </div>
             </div>
-            
-            <b>Options:</b>
-            <div v-for="direction in activeNode.directions" class="direction m-1 p-1">
-                {{ direction }} -- {{ activeNode[direction] ? activeNode[direction].name : '' }}
+            <div class="col-7" style="display: flex; align-items: stretch;">
+                <textarea v-if="activeScroll.path != ''" rows="50" cols="100" v-model="activeScrollContent" @input="onInput" style="height: 480px; min-height: 480px; max-height: 480px;"></textarea>
             </div>
-            <div v-if="activeNode.sourceDirection != null" class="direction m-1 p-1">
-                back
-            </div>
-            <div v-if="activeNode.scrolls == undefined || activeNode.scrolls == []" class="direction m-1 p-1">
-                write
-            </div>
-            <div>
-                > <input type="text" id="navigator" placeholder="act here" @keyup.enter="navigate" />
-            </div>
-        </div>
-        <div class="row border" style="height: 60%;">
-            <div class="col-10">
-                <textarea rows="20" cols="100" v-model="activeScrollContent" @input="onInput"></textarea>
-            </div>
-            <div class="col-2" style="overflow-y: scroll;" id="flockList">
+            <div class="col-2" style="overflow-y: auto; max-height: 480px;" id="flockList">
                 <div v-for="bird in flock" :key="bird.id" class="row border bird">
                     <div>
                         {{ bird.value }}

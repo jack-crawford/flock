@@ -4,4 +4,7 @@ flockJS/.DS_Store
 flockJS/.github/copilot-instructions.md
 flockJS/resources/.DS_Store
 flockJS/scrolls/*.md
+flockJS/scrolls/*
 .vscode
+flockJS/flock.json
+flockJS/forest.json

@@ -20,6 +20,7 @@ createApp({
       forest: [],
       path: "",
       prettyPath: "",
+      lastNodeName: "",
       activeNode: {},
       activeScroll: {
         lastUpdated:null,
@@ -43,6 +44,7 @@ createApp({
         window.electronAPI.sendScroll(this.activeScroll.path, this.activeScrollContent);
     },
     loadScroll(){
+        console.log("trying to laod:)")
         window.electronAPI.getScroll(this.activeScroll.path, (scroll) => {
             this.activeScrollContent = scroll
         })
@@ -50,6 +52,7 @@ createApp({
     move(direction) {
         if(this.path == "") {
             this.path = direction;
+            this.lastNodeName = this.activeNode.name;
             this.activeNode = index(JSON.parse(JSON.stringify(this.forest)), this.path);
             this.prettyPath += "/ " + this.activeNode.name
 
@@ -67,11 +70,13 @@ createApp({
                     this.path = "";
                     this.prettyPath = "the center stone ";
                     this.activeNode = JSON.parse(JSON.stringify(this.forest));
+                    this.lastNodeName = ""
                 }
             } else {
                 //advance
                 console.log(this.prettyPath)
                 this.path = this.path + "." + direction;
+                this.lastNodeName = this.activeNode.name;
                 this.activeNode = index(JSON.parse(JSON.stringify(this.forest)), this.path);
                 this.prettyPath += "/ " + this.activeNode.name
             }

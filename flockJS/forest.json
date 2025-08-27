@@ -22,7 +22,12 @@
         "north"
       ],
       "sourceDirection": "south",
-      "scrolls": [],
+      "scrolls": [
+        {
+          "lastUpdated": "2025-08-27T00:41:10.058Z",
+          "path": "the_center_stone_/_a_twisting_giant_willow_tree.md"
+        }
+      ],
       "southeast": {
         "type": "tree",
         "name": "a bleached towering apple tree",
@@ -1360,7 +1365,12 @@
           "east"
         ],
         "sourceDirection": "southwest",
-        "scrolls": [],
+        "scrolls": [
+          {
+            "path": "the_center_stone_/_a_twin-trunked_giant_pine_tree/_a_twin-trunked_large_cedar_tree.md",
+            "lastUpdated": null
+          }
+        ],
         "west": {
           "type": "tree",
           "name": "a twin-trunked middling birch tree",
@@ -1571,7 +1581,12 @@
               "northeast"
             ],
             "sourceDirection": "south",
-            "scrolls": []
+            "scrolls": [
+              {
+                "path": "the_center_stone_/_a_twin-trunked_giant_pine_tree/_a_twin-trunked_large_cedar_tree/_a_bleached_giant_oak_tree/_a_twisting_large_spruce_tree.md",
+                "lastUpdated": null
+              }
+            ]
           },
           "northwest": {
             "type": "tree",
@@ -1601,7 +1616,12 @@
         "southeast"
       ],
       "sourceDirection": "west",
-      "scrolls": [],
+      "scrolls": [
+        {
+          "path": "the_center_stone_/_a_bleached_middling_apple_tree.md",
+          "lastUpdated": "2025-08-27T00:42:27.279Z"
+        }
+      ],
       "northwest": {
         "type": "tree",
         "name": "a late-budding middling oak tree",
@@ -3197,7 +3217,12 @@
         "southwest"
       ],
       "sourceDirection": "east",
-      "scrolls": [],
+      "scrolls": [
+        {
+          "path": "the_center_stone_/_a_sparse_middling_oak_tree.md",
+          "lastUpdated": "2025-08-27T00:23:57.496Z"
+        }
+      ],
       "southwest": {
         "type": "tree",
         "name": "a twin-trunked large willow tree",
@@ -3210,8 +3235,8 @@
         "sourceDirection": "northeast",
         "scrolls": [
           {
-            "path": "the_center_stone_/_a_sparse_middling_oak_tree/_a_twin-trunked_large_willow_tree.md",
-            "lastUpdated": null
+            "lastUpdated": "2025-08-27T00:29:02.041Z",
+            "path": "the_center_stone_/_a_sparse_middling_oak_tree/_a_twin-trunked_large_willow_tree.md"
           }
         ],
         "west": {
