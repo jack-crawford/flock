@@ -3,12 +3,13 @@ import random
 import os
 print("hello world")
 
-directionOptions = ["north", "south", "east", "west", "up", "down", "northeast", "northwest", "southeast", "southwest"]
+directionOptions = ["north", "south", "east", "west", "northeast", "northwest", "southeast", "southwest"]
+placeTypes = ["landmark", "tree"]
 
-def createTree(sourceDirection):
+def createTree(sourceDirection, depth):
     types = ["oak", "pine", "birch", "maple", "willow", "redwood", "cedar", "spruce", "cherry", "apple"]
     sizes = ["sapling", "middling", "large", "giant", "towering"]
-    qualities = ["gnarled", "twin-trunked", "twisting", "sparse", "late-budding"]
+    qualities = ["gnarled", "bleached", "twin-trunked", "twisting", "sparse", "late-budding"]
     aspects = ["deep roots", "bark wrapping in strange patterns", "wide, low branches as though climbable"]
     tree = {
         "type": "tree",
@@ -25,6 +26,8 @@ def createTree(sourceDirection):
         dirChoice = random.choice(directionOptions)
         if(dirChoice not in tree["directions"] and dirChoice != sourceDirection):
             tree["directions"].append(dirChoice)
+            if(depth > 0):
+                tree[dirChoice] = createTree(oppositeDirection(dirChoice), depth - 1);
             dirIndex += 1
     tree["name"] = f"a {random.choice(qualities)} {random.choice(sizes)} {random.choice(types)} tree"
     tree["description"] = f"it has {random.choice(aspects)}"
@@ -59,9 +62,11 @@ def newForest():
         "east": [],
         "west": [],
         "inscriptions": [],
+        "scrolls": [],
     }]
+    depth = 3
     for direction in forest[0]["directions"]:
-        forest[0][direction] = createTree(oppositeDirection(direction));
+        forest[0][direction] = createTree(oppositeDirection(direction), depth)
     print(forest)
     with open('forest.json', 'w') as f:
         json.dump(forest, f, default=str, indent=4)

@@ -144,17 +144,23 @@
             
             <b>Options:</b>
             <div v-for="direction in activeNode.directions" class="direction m-1 p-1">
-                {{ direction }}
+                {{ direction }} -- {{ activeNode[direction] ? activeNode[direction].name : '' }}
+            </div>
+            <div v-if="activeNode.sourceDirection != null" class="direction m-1 p-1">
+                back
+            </div>
+            <div v-if="activeNode.scrolls == undefined || activeNode.scrolls == []" class="direction m-1 p-1">
+                write
             </div>
             <div>
                 > <input type="text" id="navigator" placeholder="act here" @keyup.enter="navigate" />
             </div>
         </div>
         <div class="row border" style="height: 60%;">
-            <div class="col-8">
+            <div class="col-10">
                 <textarea rows="20" cols="100" v-model="activeScrollContent" @input="onInput"></textarea>
             </div>
-            <div class="col-4" style="max-height: 300px; overflow-y: scroll;" id="flockList">
+            <div class="col-2" style="overflow-y: scroll;" id="flockList">
                 <div v-for="bird in flock" :key="bird.id" class="row border bird">
                     <div>
                         {{ bird.value }}

@@ -54,6 +54,7 @@ createApp({
             this.prettyPath += "/ " + this.activeNode.name
 
         } else {
+            console.log(this.activeNode)
             if(this.activeNode.sourceDirection == direction || direction == "back") {
                 console.log("going back");
                 console.log(this.path);
@@ -78,7 +79,7 @@ createApp({
         }
         if(this.activeNode.scrolls != undefined && this.activeNode.scrolls.length > 0){
             //load scroll at path
-            this.activeScroll.path = this.prettyPath.replace(/ /g, "_").toLowerCase() + ".txt";
+            this.activeScroll.path = this.prettyPath.replace(/ /g, "_").toLowerCase() + ".md";
             this.loadScroll();
         } else {
             this.activeScroll = {
@@ -87,6 +88,7 @@ createApp({
             }
             this.activeScrollContent = "";
         }
+        console.log(this.activeNode.scrolls)
     },
     look(direction){
         if (!this.activeNode.directions.includes(direction)) {
@@ -107,6 +109,15 @@ createApp({
     write(){
         this.activeScroll.path = this.prettyPath.replace(/ /g, "_").toLowerCase() + ".md";
         this.loadScroll();
+        this.activeNode.scrolls = [this.activeScroll];
+        console.log(this.activeNode)
+        //save scroll to the forest
+        if (this.path) {
+            index(this.forest, this.path, this.activeNode);
+        } else {
+            this.forest = this.activeNode;
+        }        
+        window.electronAPI.sendForest([JSON.parse(JSON.stringify(this.forest))]);
     },
     navigate(directionEl) {
         direction = directionEl.srcElement.value.toLowerCase().trim();
@@ -171,8 +182,10 @@ createApp({
         this.activeNode = this.forest;
         console.log(this.forest)
         this.prettyPath = "the center stone ";
-        //this.navigate("north");
-
+        this.activeScroll.path = this.prettyPath.replace(/ /g, "_").toLowerCase() + ".md";
+        console.log(this.activeScroll.path)
+        this.loadScroll();
+        console.log(this.activeNode.scrolls)
       });
     }
   },

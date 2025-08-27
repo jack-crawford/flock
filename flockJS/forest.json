@@ -10,61 +10,3396 @@
     ],
     "north": {
       "type": "tree",
-      "name": "a gnarled sapling pine tree",
-      "description": "it has deep roots",
+      "name": "a twisting giant willow tree",
+      "description": "it has wide, low branches as though climbable",
       "directions": [
-        "down",
-        "northwest",
+        "southeast",
+        "east",
+        "west",
         "northeast",
         "southwest",
-        "east",
-        "southeast",
-        "north",
-        "west"
+        "northwest",
+        "north"
       ],
       "sourceDirection": "south",
-      "scrolls": []
+      "scrolls": [],
+      "southeast": {
+        "type": "tree",
+        "name": "a bleached towering apple tree",
+        "description": "it has deep roots",
+        "directions": [],
+        "sourceDirection": "northwest",
+        "scrolls": []
+      },
+      "east": {
+        "type": "tree",
+        "name": "a twisting sapling cedar tree",
+        "description": "it has deep roots",
+        "directions": [
+          "south",
+          "northwest",
+          "northeast",
+          "north",
+          "southwest"
+        ],
+        "sourceDirection": "west",
+        "scrolls": [],
+        "south": {
+          "type": "tree",
+          "name": "a late-budding middling apple tree",
+          "description": "it has deep roots",
+          "directions": [
+            "northeast"
+          ],
+          "sourceDirection": "north",
+          "scrolls": [],
+          "northeast": {
+            "type": "tree",
+            "name": "a bleached giant redwood tree",
+            "description": "it has deep roots",
+            "directions": [
+              "northeast"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          }
+        },
+        "northwest": {
+          "type": "tree",
+          "name": "a twisting sapling cherry tree",
+          "description": "it has wide, low branches as though climbable",
+          "directions": [
+            "west",
+            "south",
+            "northeast",
+            "northwest",
+            "north",
+            "east",
+            "southwest"
+          ],
+          "sourceDirection": "southeast",
+          "scrolls": [],
+          "west": {
+            "type": "tree",
+            "name": "a twisting large cedar tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "south",
+              "west"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a gnarled giant oak tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northeast",
+              "southeast",
+              "northwest",
+              "southwest",
+              "west",
+              "south",
+              "east"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a twin-trunked giant spruce tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "north",
+              "northwest",
+              "south",
+              "west",
+              "east",
+              "southeast",
+              "northeast"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a late-budding towering redwood tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northwest",
+              "north",
+              "east",
+              "northeast"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "north": {
+            "type": "tree",
+            "name": "a bleached towering apple tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "west",
+              "southeast",
+              "southwest"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a twisting middling pine tree",
+            "description": "it has deep roots",
+            "directions": [
+              "northwest"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a sparse towering spruce tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northwest",
+              "north",
+              "southeast",
+              "west",
+              "south",
+              "southwest",
+              "east"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          }
+        },
+        "northeast": {
+          "type": "tree",
+          "name": "a twisting sapling apple tree",
+          "description": "it has bark wrapping in strange patterns",
+          "directions": [
+            "south",
+            "northeast",
+            "east",
+            "north"
+          ],
+          "sourceDirection": "southwest",
+          "scrolls": [],
+          "south": {
+            "type": "tree",
+            "name": "a late-budding sapling apple tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "east",
+              "west",
+              "northwest",
+              "south",
+              "northeast",
+              "southeast",
+              "southwest"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a twin-trunked large cherry tree",
+            "description": "it has deep roots",
+            "directions": [
+              "northeast",
+              "south",
+              "north",
+              "northwest"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a twisting sapling apple tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "north"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "north": {
+            "type": "tree",
+            "name": "a late-budding middling pine tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southeast",
+              "southwest",
+              "northeast",
+              "west",
+              "east",
+              "north",
+              "northwest"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          }
+        },
+        "north": {
+          "type": "tree",
+          "name": "a late-budding giant birch tree",
+          "description": "it has wide, low branches as though climbable",
+          "directions": [
+            "north",
+            "northwest",
+            "southwest",
+            "southeast",
+            "east"
+          ],
+          "sourceDirection": "south",
+          "scrolls": [],
+          "north": {
+            "type": "tree",
+            "name": "a sparse towering pine tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southwest",
+              "west",
+              "northwest",
+              "north",
+              "east"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a gnarled towering oak tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "west",
+              "north",
+              "south",
+              "east",
+              "southwest"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a twisting large redwood tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "southeast",
+              "southwest",
+              "south",
+              "west"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a bleached large willow tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "north",
+              "northeast",
+              "west"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a sparse middling oak tree",
+            "description": "it has deep roots",
+            "directions": [],
+            "sourceDirection": "west",
+            "scrolls": []
+          }
+        },
+        "southwest": {
+          "type": "tree",
+          "name": "a late-budding giant apple tree",
+          "description": "it has deep roots",
+          "directions": [
+            "southwest",
+            "west",
+            "south",
+            "north",
+            "east",
+            "southeast"
+          ],
+          "sourceDirection": "northeast",
+          "scrolls": [],
+          "southwest": {
+            "type": "tree",
+            "name": "a gnarled giant pine tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "east",
+              "north",
+              "northwest",
+              "south"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "west": {
+            "type": "tree",
+            "name": "a late-budding large pine tree",
+            "description": "it has deep roots",
+            "directions": [
+              "southeast",
+              "west",
+              "southwest",
+              "northwest",
+              "northeast"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a late-budding giant willow tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "northwest",
+              "southeast",
+              "east",
+              "west",
+              "southwest",
+              "northeast"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          },
+          "north": {
+            "type": "tree",
+            "name": "a twisting giant cedar tree",
+            "description": "it has deep roots",
+            "directions": [
+              "north",
+              "northwest"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a twisting giant willow tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northeast",
+              "south",
+              "north",
+              "northwest"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a twisting sapling birch tree",
+            "description": "it has deep roots",
+            "directions": [],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          }
+        }
+      },
+      "west": {
+        "type": "tree",
+        "name": "a bleached large cherry tree",
+        "description": "it has wide, low branches as though climbable",
+        "directions": [],
+        "sourceDirection": "east",
+        "scrolls": []
+      },
+      "northeast": {
+        "type": "tree",
+        "name": "a twin-trunked middling pine tree",
+        "description": "it has deep roots",
+        "directions": [
+          "east",
+          "northeast",
+          "south",
+          "southeast",
+          "west"
+        ],
+        "sourceDirection": "southwest",
+        "scrolls": [],
+        "east": {
+          "type": "tree",
+          "name": "a late-budding middling apple tree",
+          "description": "it has deep roots",
+          "directions": [
+            "northeast",
+            "north",
+            "southeast"
+          ],
+          "sourceDirection": "west",
+          "scrolls": [],
+          "northeast": {
+            "type": "tree",
+            "name": "a twisting large willow tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "southeast",
+              "northeast",
+              "east",
+              "northwest",
+              "south",
+              "north"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "north": {
+            "type": "tree",
+            "name": "a gnarled middling spruce tree",
+            "description": "it has deep roots",
+            "directions": [
+              "west"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a gnarled middling willow tree",
+            "description": "it has deep roots",
+            "directions": [
+              "southeast",
+              "east",
+              "south",
+              "north",
+              "west",
+              "northeast",
+              "southwest"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          }
+        },
+        "northeast": {
+          "type": "tree",
+          "name": "a twin-trunked towering pine tree",
+          "description": "it has wide, low branches as though climbable",
+          "directions": [],
+          "sourceDirection": "southwest",
+          "scrolls": []
+        },
+        "south": {
+          "type": "tree",
+          "name": "a twin-trunked towering willow tree",
+          "description": "it has deep roots",
+          "directions": [
+            "southeast",
+            "northwest",
+            "west",
+            "southwest",
+            "south",
+            "northeast",
+            "east"
+          ],
+          "sourceDirection": "north",
+          "scrolls": [],
+          "southeast": {
+            "type": "tree",
+            "name": "a late-budding sapling redwood tree",
+            "description": "it has deep roots",
+            "directions": [
+              "west",
+              "southeast",
+              "east",
+              "south",
+              "southwest"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a sparse middling spruce tree",
+            "description": "it has deep roots",
+            "directions": [
+              "northwest",
+              "west"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "west": {
+            "type": "tree",
+            "name": "a twin-trunked large oak tree",
+            "description": "it has deep roots",
+            "directions": [
+              "south",
+              "southwest",
+              "west",
+              "southeast",
+              "north",
+              "northeast",
+              "northwest"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a twisting giant cedar tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "south",
+              "north",
+              "west",
+              "southwest"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a sparse sapling cherry tree",
+            "description": "it has deep roots",
+            "directions": [
+              "northwest",
+              "northeast",
+              "east",
+              "south",
+              "southwest",
+              "west"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a twisting middling spruce tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northeast",
+              "west",
+              "east",
+              "south",
+              "southeast"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a twisting towering cherry tree",
+            "description": "it has deep roots",
+            "directions": [
+              "south",
+              "southwest"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          }
+        },
+        "southeast": {
+          "type": "tree",
+          "name": "a gnarled sapling oak tree",
+          "description": "it has wide, low branches as though climbable",
+          "directions": [
+            "west",
+            "southeast",
+            "southwest",
+            "northeast"
+          ],
+          "sourceDirection": "northwest",
+          "scrolls": [],
+          "west": {
+            "type": "tree",
+            "name": "a gnarled giant willow tree",
+            "description": "it has deep roots",
+            "directions": [
+              "southeast",
+              "southwest",
+              "west",
+              "south",
+              "northeast"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a twisting sapling maple tree",
+            "description": "it has deep roots",
+            "directions": [
+              "east",
+              "northeast"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a twin-trunked giant maple tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "south",
+              "southwest",
+              "north",
+              "east"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a gnarled towering oak tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "northeast",
+              "east",
+              "south"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          }
+        },
+        "west": {
+          "type": "tree",
+          "name": "a gnarled large maple tree",
+          "description": "it has bark wrapping in strange patterns",
+          "directions": [
+            "north"
+          ],
+          "sourceDirection": "east",
+          "scrolls": [],
+          "north": {
+            "type": "tree",
+            "name": "a twin-trunked towering willow tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "east",
+              "southwest"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          }
+        }
+      },
+      "southwest": {
+        "type": "tree",
+        "name": "a bleached towering oak tree",
+        "description": "it has deep roots",
+        "directions": [
+          "south",
+          "east",
+          "southwest",
+          "northwest",
+          "west",
+          "north"
+        ],
+        "sourceDirection": "northeast",
+        "scrolls": [],
+        "south": {
+          "type": "tree",
+          "name": "a gnarled towering apple tree",
+          "description": "it has deep roots",
+          "directions": [
+            "southeast",
+            "south",
+            "east",
+            "northeast",
+            "southwest"
+          ],
+          "sourceDirection": "north",
+          "scrolls": [],
+          "southeast": {
+            "type": "tree",
+            "name": "a late-budding large cherry tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "north"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a late-budding towering birch tree",
+            "description": "it has deep roots",
+            "directions": [
+              "southwest",
+              "northeast",
+              "east",
+              "south"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a twisting towering apple tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a sparse sapling spruce tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a bleached giant birch tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "southwest"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          }
+        },
+        "east": {
+          "type": "tree",
+          "name": "a bleached middling redwood tree",
+          "description": "it has wide, low branches as though climbable",
+          "directions": [
+            "northeast",
+            "northwest",
+            "southeast",
+            "south"
+          ],
+          "sourceDirection": "west",
+          "scrolls": [],
+          "northeast": {
+            "type": "tree",
+            "name": "a bleached sapling birch tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "west",
+              "east",
+              "south",
+              "northeast"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a late-budding towering pine tree",
+            "description": "it has deep roots",
+            "directions": [
+              "south",
+              "northeast",
+              "west",
+              "north",
+              "northwest",
+              "southwest",
+              "east"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a bleached sapling redwood tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southwest"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a gnarled large pine tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northeast",
+              "south",
+              "southeast",
+              "west",
+              "northwest",
+              "southwest",
+              "east"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          }
+        },
+        "southwest": {
+          "type": "tree",
+          "name": "a twin-trunked sapling spruce tree",
+          "description": "it has deep roots",
+          "directions": [
+            "south",
+            "southwest",
+            "east",
+            "northwest",
+            "north",
+            "west"
+          ],
+          "sourceDirection": "northeast",
+          "scrolls": [],
+          "south": {
+            "type": "tree",
+            "name": "a twisting giant cherry tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northeast",
+              "southeast",
+              "west",
+              "northwest",
+              "south"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a gnarled middling oak tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "east",
+              "southeast"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a gnarled sapling willow tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "south",
+              "northwest",
+              "northeast"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a sparse towering spruce tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northeast",
+              "north",
+              "southwest",
+              "east"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "north": {
+            "type": "tree",
+            "name": "a gnarled large maple tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "north",
+              "northeast",
+              "east",
+              "southwest",
+              "southeast"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "west": {
+            "type": "tree",
+            "name": "a twin-trunked large willow tree",
+            "description": "it has deep roots",
+            "directions": [
+              "southwest",
+              "west",
+              "south",
+              "southeast"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          }
+        },
+        "northwest": {
+          "type": "tree",
+          "name": "a twin-trunked sapling willow tree",
+          "description": "it has deep roots",
+          "directions": [
+            "northwest",
+            "southwest",
+            "east"
+          ],
+          "sourceDirection": "southeast",
+          "scrolls": [],
+          "northwest": {
+            "type": "tree",
+            "name": "a twisting sapling cedar tree",
+            "description": "it has deep roots",
+            "directions": [
+              "north",
+              "east",
+              "west",
+              "southwest",
+              "northeast"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a twin-trunked towering apple tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "south",
+              "east",
+              "northwest",
+              "north",
+              "west"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a bleached sapling cedar tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southeast"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          }
+        },
+        "west": {
+          "type": "tree",
+          "name": "a gnarled towering cherry tree",
+          "description": "it has bark wrapping in strange patterns",
+          "directions": [
+            "southeast"
+          ],
+          "sourceDirection": "east",
+          "scrolls": [],
+          "southeast": {
+            "type": "tree",
+            "name": "a gnarled towering apple tree",
+            "description": "it has deep roots",
+            "directions": [],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          }
+        },
+        "north": {
+          "type": "tree",
+          "name": "a sparse middling spruce tree",
+          "description": "it has bark wrapping in strange patterns",
+          "directions": [
+            "west",
+            "east",
+            "southeast",
+            "north",
+            "northwest",
+            "southwest"
+          ],
+          "sourceDirection": "south",
+          "scrolls": [],
+          "west": {
+            "type": "tree",
+            "name": "a twin-trunked giant redwood tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southeast",
+              "southwest",
+              "south",
+              "northeast",
+              "northwest",
+              "west",
+              "north"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a late-budding sapling oak tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "southwest",
+              "northeast",
+              "north",
+              "northwest"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a twisting towering cherry tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "north": {
+            "type": "tree",
+            "name": "a gnarled towering spruce tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "east",
+              "northwest"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a gnarled middling apple tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "north",
+              "southwest",
+              "east"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a twisting towering oak tree",
+            "description": "it has deep roots",
+            "directions": [
+              "south",
+              "northwest",
+              "southeast",
+              "west",
+              "southwest"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          }
+        }
+      },
+      "northwest": {
+        "type": "tree",
+        "name": "a late-budding middling pine tree",
+        "description": "it has deep roots",
+        "directions": [],
+        "sourceDirection": "southeast",
+        "scrolls": []
+      },
+      "north": {
+        "type": "tree",
+        "name": "a gnarled sapling cedar tree",
+        "description": "it has bark wrapping in strange patterns",
+        "directions": [
+          "north",
+          "northeast",
+          "southwest",
+          "west"
+        ],
+        "sourceDirection": "south",
+        "scrolls": [],
+        "north": {
+          "type": "tree",
+          "name": "a gnarled large willow tree",
+          "description": "it has bark wrapping in strange patterns",
+          "directions": [
+            "east",
+            "north",
+            "west",
+            "northeast",
+            "northwest",
+            "southwest",
+            "southeast"
+          ],
+          "sourceDirection": "south",
+          "scrolls": [],
+          "east": {
+            "type": "tree",
+            "name": "a gnarled large cedar tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southeast",
+              "northeast"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "north": {
+            "type": "tree",
+            "name": "a sparse towering cedar tree",
+            "description": "it has deep roots",
+            "directions": [
+              "northwest",
+              "southwest",
+              "north",
+              "west"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "west": {
+            "type": "tree",
+            "name": "a twin-trunked middling oak tree",
+            "description": "it has deep roots",
+            "directions": [
+              "west",
+              "southeast",
+              "northeast",
+              "northwest",
+              "southwest",
+              "south",
+              "north"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a gnarled middling cherry tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southeast",
+              "northeast",
+              "east"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a twin-trunked giant cedar tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northwest",
+              "southwest",
+              "west",
+              "south",
+              "east",
+              "northeast",
+              "north"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a bleached giant birch tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northwest",
+              "south",
+              "east",
+              "southeast",
+              "north",
+              "southwest",
+              "west"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a gnarled large willow tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "west",
+              "northeast",
+              "east",
+              "south",
+              "southeast",
+              "southwest",
+              "north"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          }
+        },
+        "northeast": {
+          "type": "tree",
+          "name": "a twin-trunked towering cherry tree",
+          "description": "it has bark wrapping in strange patterns",
+          "directions": [],
+          "sourceDirection": "southwest",
+          "scrolls": []
+        },
+        "southwest": {
+          "type": "tree",
+          "name": "a bleached sapling birch tree",
+          "description": "it has bark wrapping in strange patterns",
+          "directions": [],
+          "sourceDirection": "northeast",
+          "scrolls": []
+        },
+        "west": {
+          "type": "tree",
+          "name": "a sparse large spruce tree",
+          "description": "it has deep roots",
+          "directions": [
+            "north",
+            "northwest",
+            "southwest",
+            "southeast",
+            "west",
+            "northeast",
+            "south"
+          ],
+          "sourceDirection": "east",
+          "scrolls": [],
+          "north": {
+            "type": "tree",
+            "name": "a twin-trunked large apple tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a late-budding large oak tree",
+            "description": "it has deep roots",
+            "directions": [
+              "northeast",
+              "west",
+              "east",
+              "north",
+              "south",
+              "southwest"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a late-budding large maple tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "northwest",
+              "west",
+              "east",
+              "south",
+              "southwest",
+              "north"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a twin-trunked giant redwood tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "east",
+              "south",
+              "northeast",
+              "north",
+              "southwest"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "west": {
+            "type": "tree",
+            "name": "a sparse middling redwood tree",
+            "description": "it has deep roots",
+            "directions": [
+              "north",
+              "west",
+              "southeast",
+              "northwest"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a gnarled giant spruce tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northwest"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a bleached sapling oak tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [],
+            "sourceDirection": "north",
+            "scrolls": []
+          }
+        }
+      }
     },
     "south": {
       "type": "tree",
-      "name": "a twin-trunked sapling cedar tree",
+      "name": "a twin-trunked giant pine tree",
       "description": "it has wide, low branches as though climbable",
       "directions": [
-        "up",
-        "underneath"
+        "east",
+        "northeast"
       ],
       "sourceDirection": "north",
-      "scrolls": []
+      "scrolls": [],
+      "east": {
+        "type": "tree",
+        "name": "a gnarled towering redwood tree",
+        "description": "it has wide, low branches as though climbable",
+        "directions": [],
+        "sourceDirection": "west",
+        "scrolls": []
+      },
+      "northeast": {
+        "type": "tree",
+        "name": "a twin-trunked large cedar tree",
+        "description": "it has bark wrapping in strange patterns",
+        "directions": [
+          "west",
+          "southeast",
+          "east"
+        ],
+        "sourceDirection": "southwest",
+        "scrolls": [],
+        "west": {
+          "type": "tree",
+          "name": "a twin-trunked middling birch tree",
+          "description": "it has wide, low branches as though climbable",
+          "directions": [
+            "west",
+            "north",
+            "southwest",
+            "southeast",
+            "northeast",
+            "south"
+          ],
+          "sourceDirection": "east",
+          "scrolls": [],
+          "west": {
+            "type": "tree",
+            "name": "a twisting sapling cedar tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northeast",
+              "south"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          },
+          "north": {
+            "type": "tree",
+            "name": "a bleached giant spruce tree",
+            "description": "it has deep roots",
+            "directions": [
+              "southwest",
+              "northeast"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a sparse middling cedar tree",
+            "description": "it has deep roots",
+            "directions": [
+              "southwest",
+              "southeast",
+              "northwest",
+              "west"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a twin-trunked giant birch tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southwest",
+              "west",
+              "east",
+              "north",
+              "south",
+              "southeast"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a twisting middling oak tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "east",
+              "northeast",
+              "northwest",
+              "north",
+              "west",
+              "south",
+              "southeast"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a late-budding middling oak tree",
+            "description": "it has deep roots",
+            "directions": [
+              "southwest",
+              "west",
+              "east",
+              "southeast"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          }
+        },
+        "southeast": {
+          "type": "tree",
+          "name": "a late-budding large cherry tree",
+          "description": "it has wide, low branches as though climbable",
+          "directions": [
+            "south",
+            "southwest",
+            "northeast",
+            "west",
+            "southeast",
+            "east"
+          ],
+          "sourceDirection": "northwest",
+          "scrolls": [],
+          "south": {
+            "type": "tree",
+            "name": "a sparse towering pine tree",
+            "description": "it has deep roots",
+            "directions": [
+              "west",
+              "northeast"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a twisting giant birch tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "north",
+              "east",
+              "northwest",
+              "southeast",
+              "southwest",
+              "south"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a bleached sapling cedar tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "west"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "west": {
+            "type": "tree",
+            "name": "a twisting sapling apple tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "northeast",
+              "southeast",
+              "southwest",
+              "north",
+              "northwest"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a sparse giant oak tree",
+            "description": "it has deep roots",
+            "directions": [
+              "east",
+              "south",
+              "north",
+              "west",
+              "northeast",
+              "southeast",
+              "southwest"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a sparse sapling oak tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northeast",
+              "southeast",
+              "northwest",
+              "east",
+              "north",
+              "south",
+              "southwest"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          }
+        },
+        "east": {
+          "type": "tree",
+          "name": "a bleached giant oak tree",
+          "description": "it has deep roots",
+          "directions": [
+            "north",
+            "northwest"
+          ],
+          "sourceDirection": "west",
+          "scrolls": [],
+          "north": {
+            "type": "tree",
+            "name": "a twisting large spruce tree",
+            "description": "it has deep roots",
+            "directions": [
+              "southwest",
+              "northeast"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a late-budding large cherry tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "north",
+              "northeast",
+              "southwest"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          }
+        }
+      }
     },
     "east": {
       "type": "tree",
-      "name": "a late-budding middling cedar tree",
-      "description": "it has deep roots",
+      "name": "a bleached middling apple tree",
+      "description": "it has bark wrapping in strange patterns",
       "directions": [
+        "northwest",
         "northeast",
-        "up",
-        "in"
+        "southwest",
+        "south",
+        "east",
+        "southeast"
       ],
       "sourceDirection": "west",
-      "scrolls": []
+      "scrolls": [],
+      "northwest": {
+        "type": "tree",
+        "name": "a late-budding middling oak tree",
+        "description": "it has deep roots",
+        "directions": [
+          "east",
+          "south",
+          "southwest",
+          "northeast",
+          "north",
+          "west",
+          "northwest"
+        ],
+        "sourceDirection": "southeast",
+        "scrolls": [],
+        "east": {
+          "type": "tree",
+          "name": "a sparse middling pine tree",
+          "description": "it has bark wrapping in strange patterns",
+          "directions": [],
+          "sourceDirection": "west",
+          "scrolls": []
+        },
+        "south": {
+          "type": "tree",
+          "name": "a bleached middling cedar tree",
+          "description": "it has wide, low branches as though climbable",
+          "directions": [
+            "west",
+            "southwest",
+            "south",
+            "east",
+            "northwest",
+            "southeast"
+          ],
+          "sourceDirection": "north",
+          "scrolls": [],
+          "west": {
+            "type": "tree",
+            "name": "a bleached sapling cherry tree",
+            "description": "it has deep roots",
+            "directions": [
+              "north",
+              "northeast",
+              "southeast",
+              "northwest",
+              "west",
+              "south"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a twin-trunked giant cherry tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northwest",
+              "southeast",
+              "south",
+              "east"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a twin-trunked towering willow tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "west",
+              "southwest",
+              "south",
+              "east",
+              "southeast",
+              "northwest"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a late-budding large willow tree",
+            "description": "it has deep roots",
+            "directions": [
+              "north"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a late-budding giant spruce tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "south",
+              "northwest",
+              "northeast",
+              "east",
+              "north",
+              "west"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a twisting towering birch tree",
+            "description": "it has deep roots",
+            "directions": [
+              "west",
+              "northeast",
+              "south",
+              "southeast"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          }
+        },
+        "southwest": {
+          "type": "tree",
+          "name": "a twisting large birch tree",
+          "description": "it has wide, low branches as though climbable",
+          "directions": [
+            "southeast",
+            "east",
+            "north",
+            "northwest",
+            "south",
+            "southwest"
+          ],
+          "sourceDirection": "northeast",
+          "scrolls": [],
+          "southeast": {
+            "type": "tree",
+            "name": "a late-budding towering spruce tree",
+            "description": "it has deep roots",
+            "directions": [
+              "northeast"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a twisting towering willow tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "east"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "north": {
+            "type": "tree",
+            "name": "a twin-trunked sapling spruce tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "southwest",
+              "north",
+              "southeast"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a gnarled sapling oak tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "southwest",
+              "north",
+              "west",
+              "east"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a gnarled middling maple tree",
+            "description": "it has deep roots",
+            "directions": [
+              "northwest",
+              "southeast",
+              "northeast",
+              "west",
+              "east",
+              "southwest",
+              "south"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a twisting large oak tree",
+            "description": "it has deep roots",
+            "directions": [
+              "southeast",
+              "west",
+              "southwest"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          }
+        },
+        "northeast": {
+          "type": "tree",
+          "name": "a twisting giant oak tree",
+          "description": "it has bark wrapping in strange patterns",
+          "directions": [],
+          "sourceDirection": "southwest",
+          "scrolls": []
+        },
+        "north": {
+          "type": "tree",
+          "name": "a bleached large maple tree",
+          "description": "it has bark wrapping in strange patterns",
+          "directions": [
+            "west",
+            "east"
+          ],
+          "sourceDirection": "south",
+          "scrolls": [],
+          "west": {
+            "type": "tree",
+            "name": "a sparse large willow tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "southwest"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a sparse large pine tree",
+            "description": "it has deep roots",
+            "directions": [
+              "southwest",
+              "north",
+              "east",
+              "northeast"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          }
+        },
+        "west": {
+          "type": "tree",
+          "name": "a twisting middling maple tree",
+          "description": "it has deep roots",
+          "directions": [
+            "north",
+            "west",
+            "northeast",
+            "southwest",
+            "northwest",
+            "south",
+            "southeast"
+          ],
+          "sourceDirection": "east",
+          "scrolls": [],
+          "north": {
+            "type": "tree",
+            "name": "a twisting towering cherry tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northeast",
+              "southwest",
+              "southeast",
+              "north",
+              "west"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "west": {
+            "type": "tree",
+            "name": "a bleached middling birch tree",
+            "description": "it has deep roots",
+            "directions": [
+              "north",
+              "northeast",
+              "northwest",
+              "south",
+              "southeast",
+              "southwest"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a late-budding towering oak tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "south"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a bleached towering maple tree",
+            "description": "it has deep roots",
+            "directions": [
+              "northwest",
+              "south",
+              "west"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a twisting giant cedar tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "west",
+              "south",
+              "southwest",
+              "east",
+              "north",
+              "northwest"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a bleached large pine tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northeast",
+              "east",
+              "southwest",
+              "south"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a twisting large apple tree",
+            "description": "it has deep roots",
+            "directions": [
+              "north",
+              "northeast",
+              "west"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          }
+        },
+        "northwest": {
+          "type": "tree",
+          "name": "a late-budding towering apple tree",
+          "description": "it has deep roots",
+          "directions": [],
+          "sourceDirection": "southeast",
+          "scrolls": []
+        }
+      },
+      "northeast": {
+        "type": "tree",
+        "name": "a twin-trunked giant spruce tree",
+        "description": "it has bark wrapping in strange patterns",
+        "directions": [],
+        "sourceDirection": "southwest",
+        "scrolls": []
+      },
+      "southwest": {
+        "type": "tree",
+        "name": "a sparse middling apple tree",
+        "description": "it has deep roots",
+        "directions": [
+          "west",
+          "east"
+        ],
+        "sourceDirection": "northeast",
+        "scrolls": [],
+        "west": {
+          "type": "tree",
+          "name": "a sparse sapling willow tree",
+          "description": "it has bark wrapping in strange patterns",
+          "directions": [
+            "south"
+          ],
+          "sourceDirection": "east",
+          "scrolls": [],
+          "south": {
+            "type": "tree",
+            "name": "a twisting giant apple tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southeast",
+              "southwest",
+              "south",
+              "east",
+              "northeast",
+              "northwest",
+              "west"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          }
+        },
+        "east": {
+          "type": "tree",
+          "name": "a twisting towering cedar tree",
+          "description": "it has bark wrapping in strange patterns",
+          "directions": [
+            "north",
+            "northeast",
+            "northwest",
+            "south",
+            "southeast",
+            "east",
+            "southwest"
+          ],
+          "sourceDirection": "west",
+          "scrolls": [],
+          "north": {
+            "type": "tree",
+            "name": "a gnarled towering redwood tree",
+            "description": "it has deep roots",
+            "directions": [
+              "west",
+              "southeast",
+              "east",
+              "southwest"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a twisting giant birch tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a sparse towering pine tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "northwest",
+              "east",
+              "north",
+              "south",
+              "west",
+              "southwest"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a twin-trunked towering cedar tree",
+            "description": "it has deep roots",
+            "directions": [
+              "east",
+              "south",
+              "west",
+              "northwest",
+              "southwest",
+              "southeast",
+              "northeast"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a twin-trunked towering redwood tree",
+            "description": "it has deep roots",
+            "directions": [
+              "north",
+              "northeast"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a twisting middling apple tree",
+            "description": "it has deep roots",
+            "directions": [
+              "east",
+              "northwest",
+              "north",
+              "southeast"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a late-budding sapling redwood tree",
+            "description": "it has deep roots",
+            "directions": [
+              "west",
+              "southwest",
+              "east",
+              "north",
+              "south",
+              "northwest"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          }
+        }
+      },
+      "south": {
+        "type": "tree",
+        "name": "a bleached giant birch tree",
+        "description": "it has wide, low branches as though climbable",
+        "directions": [
+          "south",
+          "west",
+          "northwest",
+          "east"
+        ],
+        "sourceDirection": "north",
+        "scrolls": [],
+        "south": {
+          "type": "tree",
+          "name": "a twin-trunked sapling redwood tree",
+          "description": "it has bark wrapping in strange patterns",
+          "directions": [
+            "northwest",
+            "south",
+            "southwest",
+            "northeast",
+            "east",
+            "west"
+          ],
+          "sourceDirection": "north",
+          "scrolls": [],
+          "northwest": {
+            "type": "tree",
+            "name": "a gnarled large birch tree",
+            "description": "it has deep roots",
+            "directions": [
+              "west",
+              "northeast",
+              "east"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a late-budding middling oak tree",
+            "description": "it has deep roots",
+            "directions": [],
+            "sourceDirection": "north",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a bleached giant apple tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southeast",
+              "southwest",
+              "north",
+              "northwest"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a twisting sapling apple tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "east",
+              "northwest",
+              "north"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a sparse middling redwood tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "southwest",
+              "southeast"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "west": {
+            "type": "tree",
+            "name": "a sparse large redwood tree",
+            "description": "it has deep roots",
+            "directions": [],
+            "sourceDirection": "east",
+            "scrolls": []
+          }
+        },
+        "west": {
+          "type": "tree",
+          "name": "a late-budding giant oak tree",
+          "description": "it has wide, low branches as though climbable",
+          "directions": [
+            "north",
+            "northwest"
+          ],
+          "sourceDirection": "east",
+          "scrolls": [],
+          "north": {
+            "type": "tree",
+            "name": "a sparse large pine tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southwest",
+              "east"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a bleached large cherry tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "north",
+              "east",
+              "northeast",
+              "northwest"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          }
+        },
+        "northwest": {
+          "type": "tree",
+          "name": "a gnarled large willow tree",
+          "description": "it has deep roots",
+          "directions": [
+            "northwest",
+            "north",
+            "south",
+            "east",
+            "southwest"
+          ],
+          "sourceDirection": "southeast",
+          "scrolls": [],
+          "northwest": {
+            "type": "tree",
+            "name": "a twin-trunked sapling redwood tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "north",
+              "southwest",
+              "east",
+              "northwest"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "north": {
+            "type": "tree",
+            "name": "a twin-trunked large willow tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southeast",
+              "north",
+              "west"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a twin-trunked middling cedar tree",
+            "description": "it has deep roots",
+            "directions": [
+              "southwest",
+              "east",
+              "northeast",
+              "south",
+              "southeast",
+              "northwest",
+              "west"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a late-budding middling willow tree",
+            "description": "it has deep roots",
+            "directions": [
+              "east",
+              "northwest",
+              "south",
+              "northeast",
+              "north",
+              "southwest",
+              "southeast"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a twin-trunked middling redwood tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "east",
+              "northwest",
+              "southeast",
+              "southwest",
+              "north"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          }
+        },
+        "east": {
+          "type": "tree",
+          "name": "a gnarled large pine tree",
+          "description": "it has wide, low branches as though climbable",
+          "directions": [
+            "north",
+            "east",
+            "south",
+            "southeast",
+            "southwest",
+            "northeast"
+          ],
+          "sourceDirection": "west",
+          "scrolls": [],
+          "north": {
+            "type": "tree",
+            "name": "a sparse giant apple tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "northeast",
+              "southeast",
+              "southwest",
+              "north",
+              "east"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a twin-trunked giant cherry tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "south",
+              "southwest",
+              "southeast",
+              "northwest",
+              "northeast"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a gnarled middling birch tree",
+            "description": "it has deep roots",
+            "directions": [
+              "east",
+              "northeast",
+              "southeast",
+              "northwest"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a late-budding giant pine tree",
+            "description": "it has deep roots",
+            "directions": [
+              "east"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a late-budding large willow tree",
+            "description": "it has deep roots",
+            "directions": [
+              "east",
+              "west",
+              "north",
+              "northwest",
+              "southeast"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a twisting towering birch tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          }
+        }
+      },
+      "east": {
+        "type": "tree",
+        "name": "a gnarled large cedar tree",
+        "description": "it has bark wrapping in strange patterns",
+        "directions": [
+          "south",
+          "east",
+          "northwest"
+        ],
+        "sourceDirection": "west",
+        "scrolls": [],
+        "south": {
+          "type": "tree",
+          "name": "a bleached middling willow tree",
+          "description": "it has deep roots",
+          "directions": [
+            "southeast",
+            "east",
+            "southwest",
+            "south"
+          ],
+          "sourceDirection": "north",
+          "scrolls": [],
+          "southeast": {
+            "type": "tree",
+            "name": "a twisting large cherry tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "south",
+              "southwest",
+              "east",
+              "southeast",
+              "north"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a twisting large maple tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "southwest",
+              "northwest",
+              "south"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a gnarled giant spruce tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southwest",
+              "west",
+              "south",
+              "southeast",
+              "east",
+              "north"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a gnarled middling apple tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [],
+            "sourceDirection": "north",
+            "scrolls": []
+          }
+        },
+        "east": {
+          "type": "tree",
+          "name": "a late-budding giant cherry tree",
+          "description": "it has wide, low branches as though climbable",
+          "directions": [
+            "north",
+            "southwest",
+            "east",
+            "northeast",
+            "northwest"
+          ],
+          "sourceDirection": "west",
+          "scrolls": [],
+          "north": {
+            "type": "tree",
+            "name": "a sparse middling pine tree",
+            "description": "it has deep roots",
+            "directions": [],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a twisting large cherry tree",
+            "description": "it has deep roots",
+            "directions": [
+              "west",
+              "southeast",
+              "southwest"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a late-budding large apple tree",
+            "description": "it has deep roots",
+            "directions": [
+              "east",
+              "southeast",
+              "northwest"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a bleached sapling apple tree",
+            "description": "it has deep roots",
+            "directions": [
+              "northwest",
+              "southeast",
+              "west",
+              "north"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a gnarled sapling cherry tree",
+            "description": "it has deep roots",
+            "directions": [
+              "southwest",
+              "northwest",
+              "west",
+              "south",
+              "north",
+              "northeast"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          }
+        },
+        "northwest": {
+          "type": "tree",
+          "name": "a twisting sapling spruce tree",
+          "description": "it has bark wrapping in strange patterns",
+          "directions": [
+            "northeast",
+            "northwest",
+            "west",
+            "north",
+            "south",
+            "east"
+          ],
+          "sourceDirection": "southeast",
+          "scrolls": [],
+          "northeast": {
+            "type": "tree",
+            "name": "a sparse giant spruce tree",
+            "description": "it has deep roots",
+            "directions": [],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a twisting towering spruce tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "west",
+              "south",
+              "north",
+              "southwest",
+              "northeast",
+              "northwest",
+              "east"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "west": {
+            "type": "tree",
+            "name": "a twin-trunked towering spruce tree",
+            "description": "it has deep roots",
+            "directions": [
+              "north"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          },
+          "north": {
+            "type": "tree",
+            "name": "a late-budding towering maple tree",
+            "description": "it has deep roots",
+            "directions": [
+              "northwest",
+              "east"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a sparse large birch tree",
+            "description": "it has deep roots",
+            "directions": [
+              "west",
+              "south",
+              "southwest",
+              "east"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a sparse towering pine tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southwest",
+              "northeast",
+              "northwest",
+              "east",
+              "north",
+              "southeast",
+              "south"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          }
+        }
+      },
+      "southeast": {
+        "type": "tree",
+        "name": "a gnarled large apple tree",
+        "description": "it has bark wrapping in strange patterns",
+        "directions": [
+          "south",
+          "southwest",
+          "northeast",
+          "north",
+          "southeast",
+          "west"
+        ],
+        "sourceDirection": "northwest",
+        "scrolls": [],
+        "south": {
+          "type": "tree",
+          "name": "a late-budding towering cherry tree",
+          "description": "it has bark wrapping in strange patterns",
+          "directions": [
+            "south",
+            "southwest",
+            "northwest",
+            "southeast",
+            "west",
+            "northeast"
+          ],
+          "sourceDirection": "north",
+          "scrolls": [],
+          "south": {
+            "type": "tree",
+            "name": "a gnarled large cherry tree",
+            "description": "it has deep roots",
+            "directions": [
+              "west",
+              "south",
+              "southwest",
+              "east",
+              "southeast",
+              "northwest",
+              "northeast"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a twin-trunked giant birch tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "south",
+              "southeast"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a sparse sapling birch tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a twisting sapling cherry tree",
+            "description": "it has deep roots",
+            "directions": [
+              "southwest"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "west": {
+            "type": "tree",
+            "name": "a twin-trunked towering birch tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "west",
+              "southeast",
+              "south",
+              "southwest",
+              "northwest",
+              "northeast",
+              "north"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a gnarled towering apple tree",
+            "description": "it has deep roots",
+            "directions": [
+              "northeast",
+              "southeast"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          }
+        },
+        "southwest": {
+          "type": "tree",
+          "name": "a gnarled large oak tree",
+          "description": "it has wide, low branches as though climbable",
+          "directions": [
+            "northwest",
+            "southwest",
+            "southeast",
+            "north",
+            "south"
+          ],
+          "sourceDirection": "northeast",
+          "scrolls": [],
+          "northwest": {
+            "type": "tree",
+            "name": "a late-budding large willow tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southwest",
+              "northwest",
+              "north",
+              "northeast",
+              "south",
+              "west",
+              "east"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a sparse large birch tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "south",
+              "west",
+              "northwest",
+              "east",
+              "north",
+              "southwest"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a sparse towering cherry tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "southwest",
+              "east"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "north": {
+            "type": "tree",
+            "name": "a twisting sapling apple tree",
+            "description": "it has deep roots",
+            "directions": [
+              "northwest",
+              "north",
+              "northeast",
+              "southeast",
+              "southwest"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a twisting large redwood tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "southwest",
+              "northwest",
+              "south",
+              "east",
+              "southeast",
+              "northeast"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          }
+        },
+        "northeast": {
+          "type": "tree",
+          "name": "a gnarled giant willow tree",
+          "description": "it has deep roots",
+          "directions": [
+            "southeast",
+            "east",
+            "northeast",
+            "northwest",
+            "south"
+          ],
+          "sourceDirection": "southwest",
+          "scrolls": [],
+          "southeast": {
+            "type": "tree",
+            "name": "a gnarled large oak tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "south",
+              "west",
+              "north"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a sparse large cherry tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southeast",
+              "north",
+              "south",
+              "southwest"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a sparse sapling redwood tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southeast",
+              "south",
+              "northeast"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a twin-trunked towering pine tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "west",
+              "south"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a sparse sapling apple tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "east",
+              "southeast",
+              "northwest",
+              "northeast",
+              "west",
+              "south"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          }
+        },
+        "north": {
+          "type": "tree",
+          "name": "a sparse giant spruce tree",
+          "description": "it has wide, low branches as though climbable",
+          "directions": [
+            "east",
+            "southeast",
+            "north",
+            "northwest",
+            "northeast",
+            "southwest",
+            "west"
+          ],
+          "sourceDirection": "south",
+          "scrolls": [],
+          "east": {
+            "type": "tree",
+            "name": "a bleached large pine tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southwest",
+              "southeast",
+              "northeast",
+              "east",
+              "northwest"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a twisting sapling birch tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northeast",
+              "southwest",
+              "east",
+              "north"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "north": {
+            "type": "tree",
+            "name": "a late-budding large redwood tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "west",
+              "northeast",
+              "northwest",
+              "east"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a sparse middling birch tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "southwest"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a bleached giant spruce tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "south",
+              "southeast",
+              "northeast",
+              "west",
+              "east"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a gnarled giant redwood tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "south",
+              "east",
+              "west",
+              "northwest",
+              "southeast"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "west": {
+            "type": "tree",
+            "name": "a twisting large oak tree",
+            "description": "it has deep roots",
+            "directions": [],
+            "sourceDirection": "east",
+            "scrolls": []
+          }
+        },
+        "southeast": {
+          "type": "tree",
+          "name": "a gnarled middling spruce tree",
+          "description": "it has wide, low branches as though climbable",
+          "directions": [
+            "west",
+            "northeast",
+            "east",
+            "southwest",
+            "north"
+          ],
+          "sourceDirection": "northwest",
+          "scrolls": [],
+          "west": {
+            "type": "tree",
+            "name": "a late-budding sapling spruce tree",
+            "description": "it has deep roots",
+            "directions": [
+              "southeast",
+              "northwest",
+              "northeast",
+              "south",
+              "west",
+              "north"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a sparse towering birch tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northeast",
+              "north",
+              "east",
+              "west"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "east": {
+            "type": "tree",
+            "name": "a twisting large pine tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southeast",
+              "southwest",
+              "northeast",
+              "south",
+              "northwest"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a twisting middling redwood tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southwest",
+              "northwest",
+              "southeast",
+              "east",
+              "west"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "north": {
+            "type": "tree",
+            "name": "a late-budding sapling maple tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northwest",
+              "east",
+              "north"
+            ],
+            "sourceDirection": "south",
+            "scrolls": []
+          }
+        },
+        "west": {
+          "type": "tree",
+          "name": "a late-budding middling redwood tree",
+          "description": "it has wide, low branches as though climbable",
+          "directions": [
+            "south",
+            "north",
+            "southeast",
+            "northeast",
+            "southwest",
+            "west"
+          ],
+          "sourceDirection": "east",
+          "scrolls": [],
+          "south": {
+            "type": "tree",
+            "name": "a twisting middling cherry tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "northwest",
+              "southwest",
+              "west",
+              "northeast"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          },
+          "north": {
+            "type": "tree",
+            "name": "a gnarled sapling pine tree",
+            "description": "it has deep roots",
+            "directions": [],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a twisting towering pine tree",
+            "description": "it has deep roots",
+            "directions": [
+              "southwest",
+              "west",
+              "southeast",
+              "northeast",
+              "north"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a twisting giant cherry tree",
+            "description": "it has deep roots",
+            "directions": [],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a bleached towering willow tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "southeast",
+              "east",
+              "west",
+              "south",
+              "north",
+              "southwest"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "west": {
+            "type": "tree",
+            "name": "a gnarled large maple tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "southwest",
+              "west"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          }
+        }
+      }
     },
     "west": {
       "type": "tree",
-      "name": "a twin-trunked middling apple tree",
-      "description": "it has bark wrapping in strange patterns",
+      "name": "a sparse middling oak tree",
+      "description": "it has deep roots",
       "directions": [
-        "south",
-        "west",
-        "down",
-        "up",
-        "southeast",
-        "northeast",
-        "southwest",
-        "north"
+        "southwest"
       ],
       "sourceDirection": "east",
-      "scrolls": []
+      "scrolls": [],
+      "southwest": {
+        "type": "tree",
+        "name": "a twin-trunked large willow tree",
+        "description": "it has bark wrapping in strange patterns",
+        "directions": [
+          "west",
+          "north",
+          "south"
+        ],
+        "sourceDirection": "northeast",
+        "scrolls": [
+          {
+            "path": "the_center_stone_/_a_sparse_middling_oak_tree/_a_twin-trunked_large_willow_tree.md",
+            "lastUpdated": null
+          }
+        ],
+        "west": {
+          "type": "tree",
+          "name": "a twisting sapling cherry tree",
+          "description": "it has deep roots",
+          "directions": [
+            "north",
+            "west",
+            "southwest",
+            "northwest",
+            "southeast",
+            "northeast",
+            "south"
+          ],
+          "sourceDirection": "east",
+          "scrolls": [],
+          "north": {
+            "type": "tree",
+            "name": "a twin-trunked giant cedar tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [],
+            "sourceDirection": "south",
+            "scrolls": []
+          },
+          "west": {
+            "type": "tree",
+            "name": "a bleached large willow tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "northwest",
+              "southwest",
+              "west",
+              "southeast",
+              "south"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          },
+          "southwest": {
+            "type": "tree",
+            "name": "a twisting large spruce tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "northwest",
+              "southeast",
+              "north",
+              "east",
+              "south"
+            ],
+            "sourceDirection": "northeast",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a sparse giant birch tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "north",
+              "northwest",
+              "west"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          },
+          "southeast": {
+            "type": "tree",
+            "name": "a bleached sapling maple tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "southeast",
+              "southwest",
+              "south",
+              "northeast",
+              "north",
+              "west",
+              "east"
+            ],
+            "sourceDirection": "northwest",
+            "scrolls": []
+          },
+          "northeast": {
+            "type": "tree",
+            "name": "a twisting middling birch tree",
+            "description": "it has deep roots",
+            "directions": [
+              "northwest",
+              "southeast",
+              "south",
+              "northeast",
+              "north",
+              "east"
+            ],
+            "sourceDirection": "southwest",
+            "scrolls": []
+          },
+          "south": {
+            "type": "tree",
+            "name": "a bleached sapling oak tree",
+            "description": "it has deep roots",
+            "directions": [
+              "northeast"
+            ],
+            "sourceDirection": "north",
+            "scrolls": []
+          }
+        },
+        "north": {
+          "type": "tree",
+          "name": "a twin-trunked sapling apple tree",
+          "description": "it has bark wrapping in strange patterns",
+          "directions": [
+            "east",
+            "west"
+          ],
+          "sourceDirection": "south",
+          "scrolls": [],
+          "east": {
+            "type": "tree",
+            "name": "a twisting towering pine tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northeast"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "west": {
+            "type": "tree",
+            "name": "a gnarled large maple tree",
+            "description": "it has bark wrapping in strange patterns",
+            "directions": [
+              "south",
+              "west",
+              "northeast",
+              "northwest",
+              "southeast",
+              "southwest",
+              "north"
+            ],
+            "sourceDirection": "east",
+            "scrolls": []
+          }
+        },
+        "south": {
+          "type": "tree",
+          "name": "a bleached sapling birch tree",
+          "description": "it has bark wrapping in strange patterns",
+          "directions": [
+            "east",
+            "northwest"
+          ],
+          "sourceDirection": "north",
+          "scrolls": [],
+          "east": {
+            "type": "tree",
+            "name": "a sparse large maple tree",
+            "description": "it has deep roots",
+            "directions": [
+              "northwest"
+            ],
+            "sourceDirection": "west",
+            "scrolls": []
+          },
+          "northwest": {
+            "type": "tree",
+            "name": "a twin-trunked large apple tree",
+            "description": "it has wide, low branches as though climbable",
+            "directions": [
+              "northeast",
+              "east",
+              "south",
+              "southwest",
+              "west",
+              "north"
+            ],
+            "sourceDirection": "southeast",
+            "scrolls": []
+          }
+        }
+      }
     },
-    "inscriptions": []
+    "inscriptions": [],
+    "scrolls": [
+      {
+        "lastUpdated": null,
+        "path": "the_center_stone_.md"
+      }
+    ]
   }
 ]

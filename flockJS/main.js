@@ -93,7 +93,7 @@ ipcMain.on('getScroll', (event, filePath) => {
 });
 ipcMain.on('saveScroll', (event, payload) => {
     console.log(payload)
-    const filePath = "scrolls/" + payload.path.replace("/", "-");
+    const filePath = "scrolls/" + payload.path.replaceAll("/", "-");
     const content = payload.content || '';
     try {
         fs.writeFileSync(filePath, content, 'utf-8');
